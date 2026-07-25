@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reach — Инженерия скорости. Премиальные велосипеды ручной настройки</title>
+<meta name="description" content="Reach — ателье велосипедов премиум-класса. Карбоновые рамы, инженерная точность, индивидуальная настройка посадки. Каждый велосипед собирается под своего владельца.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reach — Создан двигаться дальше">
+<meta property="og:description" content="Инженерия, в которой каждый грамм имеет значение. Велосипеды премиум-класса с индивидуальной настройкой посадки.">
+<meta property="og:image" content="img/1.png">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="theme-color" content="#FAFAF8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="img/1.png" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="BikeStore.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportingGoodsStore",
+  "name": "Reach",
+  "description": "Ателье премиальных велосипедов с индивидуальной настройкой посадки и ручной сборкой",
+  "image": "img/1.png",
+  "priceRange": "₽₽₽₽",
+  "telephone": "+7-495-000-00-00",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Малая Ордынка, 19",
+    "addressLocality": "Москва",
+    "postalCode": "115035",
+    "addressCountry": "RU"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday"],
+      "opens": "11:00",
+      "closes": "18:00"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Reach", "item": "https://reach-bikes.ru/"},
+    {"@type": "ListItem", "position": 2, "name": "Коллекция", "item": "https://reach-bikes.ru/collection"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "Product",
+      "position": 1,
+      "name": "Reach Solano",
+      "description": "Шоссейный велосипед с карбоновой рамой T1100, индивидуальной геометрией и электронной трансмиссией на 12 скоростей",
+      "image": "img/6.png",
+      "brand": {"@type": "Brand", "name": "Reach"},
+      "offers": {"@type": "Offer", "priceCurrency": "RUB", "price": "1240000", "availability": "https://schema.org/InStock"}
+    },
+    {
+      "@type": "Product",
+      "position": 2,
+      "name": "Reach Terra",
+      "description": "Гравийный велосипед с титановой рамой ручной сварки и увеличенным клиренсом для смешанного покрытия",
+      "image": "img/7.png",
+      "brand": {"@type": "Brand", "name": "Reach"},
+      "offers": {"@type": "Offer", "priceCurrency": "RUB", "price": "980000", "availability": "https://schema.org/InStock"}
+    },
+    {
+      "@type": "Product",
+      "position": 3,
+      "name": "Reach Apex",
+      "description": "Трековый велосипед с карбоновой рамой аэропрофиля и фиксированной передачей",
+      "image": "img/8.png",
+      "brand": {"@type": "Brand", "name": "Reach"},
+      "offers": {"@type": "Offer", "priceCurrency": "RUB", "price": "860000", "availability": "https://schema.org/InStock"}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Сколько занимает индивидуальная настройка посадки?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Полная примерка и настройка геометрии занимает от девяноста минут. Мастер снимает пятнадцать антропометрических параметров и подбирает раму под них, а не наоборот."}
+    },
+    {
+      "@type": "Question",
+      "name": "Можно ли изменить характеристики велосипеда после заказа?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Да, до момента финальной сборки можно скорректировать компоненты, цвет и настройки геометрии вместе с мастером."}
+    },
+    {
+      "@type": "Question",
+      "name": "Что входит в гарантийное обслуживание?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Рама покрывается пожизненной гарантией на трещины и деформацию. Первые три технических осмотра после покупки — без стоимости."}
+    }
+  ]
+}
+</script>
+</head>
+<body class="is-loading">
+
+<div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Загрузка страницы">
+  <div class="preloader-inner">
+    <span class="preloader-mark">Reach</span>
+    <div class="preloader-bar">
+      <span class="preloader-bar-fill" id="preloaderFill"></span>
+    </div>
+    <span class="preloader-count" id="preloaderCount">00</span>
+  </div>
+</div>
+
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="trail-canvas" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#" class="brand-mark" aria-label="Reach — главная">
+      <span class="brand-word">Reach</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#philosophy">Философия</a>
+      <a href="#collection">Коллекция</a>
+      <a href="#studio">Ателье</a>
+      <a href="#stories">Владельцы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn-ghost" id="consultBtn" type="button">Консультация</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+  <a href="#philosophy">Философия</a>
+  <a href="#collection">Коллекция</a>
+  <a href="#studio">Ателье</a>
+  <a href="#stories">Владельцы</a>
+  <a href="#contact">Контакты</a>
+  <button class="btn-primary" id="mobileConsultBtn" type="button">Записаться на консультацию</button>
+</nav>
+
+<main id="main">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero" id="hero" aria-label="Приветствие">
+    <div class="hero-media">
+      <img
+        class="hero-img"
+        id="heroImg"
+        src="img/1.png"
+        alt="Карбоновый шоссейный велосипед на фоне альпийской дороги в утреннем тумане"
+        fetchpriority="high"
+      >
+      <div class="hero-fog" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-reveal>Ателье велосипедов · с две тысячи одиннадцатого</p>
+      <h1 class="hero-title">
+        <span class="line" data-reveal>Создан</span>
+        <span class="line" data-reveal>двигаться</span>
+        <span class="line" data-reveal>дальше.</span>
+      </h1>
+      <p class="hero-sub" data-reveal>Инженерия, в которой каждый грамм имеет значение.</p>
+
+      <div class="hero-actions" data-reveal>
+        <a href="#collection" class="btn-primary">Исследовать коллекцию</a>
+        <button class="btn-outline" id="heroConsultBtn" type="button">Получить консультацию</button>
+      </div>
+    </div>
+
+    
+
+    <div class="hero-metric" aria-hidden="true">
+      <span class="metric-value" id="heroWeight">6.8</span>
+      <span class="metric-unit">кг рама</span>
+    </div>
+  </section>
+
+  <!-- ============ 2. ФИЛОСОФИЯ ============ -->
+  <section class="philosophy" id="philosophy" aria-label="Философия бренда">
+    <div class="section-frame">
+      <div class="philosophy-intro">
+        <span class="section-index" data-reveal>Философия</span>
+        <h2 class="section-title" data-reveal>Четыре принципа,<br>из которых собран каждый велосипед.</h2>
+      </div>
+
+      <div class="philosophy-grid">
+        <article class="philosophy-card" data-reveal>
+          <div class="card-media">
+            <img src="img/2.png" alt="Крупный план карбонового плетения рамы" loading="lazy">
+          </div>
+          <h3>Материалы</h3>
+          <p>Карбон T1100, титан марки 3AL-2.5V, форжированный алюминий 7075. Каждый материал выбран не по каталогу, а под конкретную нагрузку в конкретной точке рамы.</p>
+        </article>
+
+        <article class="philosophy-card" data-reveal>
+          <div class="card-media">
+            <img src="img/3.png" alt="Мастер за работой в мастерской" loading="lazy">
+          </div>
+          <h3>Инженерия</h3>
+          <p>Геометрия рассчитывается для каждой посадки индивидуально. Углы труб, вылет каретки, база — переменные, а не фиксированные значения из размерной сетки.</p>
+        </article>
+
+        <article class="philosophy-card" data-reveal>
+          <div class="card-media">
+            <img src="img/4.png" alt="Тестирование велосипеда на аэродинамическом стенде" loading="lazy">
+          </div>
+          <h3>Тестирование</h3>
+          <p>Двести часов усталостных испытаний на раму. Аэродинамическая продувка для каждой новой формы трубы. Ничего не покидает мастерскую без цифр, подтверждающих запас прочности.</p>
+        </article>
+
+        <article class="philosophy-card" data-reveal>
+          <div class="card-media">
+            <img src="img/5.png" alt="Ручная настройка компонентов велосипеда" loading="lazy">
+          </div>
+          <h3>Ручная настройка</h3>
+          <p>Финальная сборка — руки одного мастера от начала до конца. Момент затяжки каждого болта фиксируется в паспорте велосипеда вместе с его именем.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. КОЛЛЕКЦИЯ ============ -->
+  <section class="collection" id="collection" aria-label="Коллекция велосипедов">
+    <div class="section-frame">
+      <div class="collection-header">
+        <span class="section-index" data-reveal>Коллекция</span>
+        <h2 class="section-title" data-reveal>Три платформы.<br>Один принцип точности.</h2>
+        <p class="collection-lede" data-reveal>Каждый велосипед показан на подиуме — как на выставке инженерного искусства, а не на витрине магазина. Прокрутите характеристики, чтобы почувствовать разницу в граммах.</p>
+      </div>
+
+      <div class="podium-list">
+
+        <article class="podium" data-reveal>
+          <div class="podium-index">01</div>
+          <div class="podium-visual">
+            <div class="podium-ground" aria-hidden="true"></div>
+            <img src="img/6.png" alt="Шоссейный велосипед Solano — модель серии Атлас" loading="lazy" class="podium-img">
+          </div>
+          <div class="podium-info">
+            <h3>Solano</h3>
+            <p class="podium-tagline">Для тех, кто выбирает дорогу без компромиссов.</p>
+            <dl class="spec-list">
+              <div class="spec-row"><dt>Рама</dt><dd>Карбон T1100, монокок</dd></div>
+              <div class="spec-row"><dt>Вес рамы</dt><dd>790 г</dd></div>
+              <div class="spec-row"><dt>Геометрия</dt><dd>Racing, настройка под владельца</dd></div>
+              <div class="spec-row"><dt>Трансмиссия</dt><dd>Электронная, 12 скоростей</dd></div>
+              <div class="spec-row"><dt>Тормоза</dt><dd>Гидравлические дисковые</dd></div>
+            </dl>
+            <div class="podium-actions">
+              <a class="podium-price" aria-label="Открыть страницу модели Solano">Стоимость</a>
+              <span class="podium-price">от 1 240 000 ₽</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="podium reverse" data-reveal>
+          <div class="podium-index">02</div>
+          <div class="podium-visual">
+            <div class="podium-ground" aria-hidden="true"></div>
+            <img src="img/7.png" alt="Гравийный велосипед Terra — модель серии Норд" loading="lazy" class="podium-img">
+          </div>
+          <div class="podium-info">
+            <h3>Terra</h3>
+            <p class="podium-tagline">Дорога заканчивается там, где начинается решение.</p>
+            <dl class="spec-list">
+              <div class="spec-row"><dt>Рама</dt><dd>Титан 3AL-2.5V, ручная сварка</dd></div>
+              <div class="spec-row"><dt>Вес рамы</dt><dd>1340 г</dd></div>
+              <div class="spec-row"><dt>Геометрия</dt><dd>Endurance, увеличенный клиренс</dd></div>
+              <div class="spec-row"><dt>Трансмиссия</dt><dd>Механическая, 13 скоростей</dd></div>
+              <div class="spec-row"><dt>Тормоза</dt><dd>Гидравлические дисковые</dd></div>
+            </dl>
+            <div class="podium-actions">
+              <a class="podium-price" aria-label="Открыть страницу модели Terra">Стоимость</a>
+              <span class="podium-price">от 980 000 ₽</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="podium" data-reveal>
+          <div class="podium-index">03</div>
+          <div class="podium-visual">
+            <div class="podium-ground" aria-hidden="true"></div>
+            <img src="img/8.png" alt="Трековый велосипед Apex — модель серии Велодром" loading="lazy" class="podium-img">
+          </div>
+          <div class="podium-info">
+            <h3>Apex</h3>
+            <p class="podium-tagline">Одна передача. Ноль лишнего. Чистая скорость.</p>
+            <dl class="spec-list">
+              <div class="spec-row"><dt>Рама</dt><dd>Карбон, аэропрофиль труб</dd></div>
+              <div class="spec-row"><dt>Вес рамы</dt><dd>860 г</dd></div>
+              <div class="spec-row"><dt>Геометрия</dt><dd>Track, фиксированная передача</dd></div>
+              <div class="spec-row"><dt>Трансмиссия</dt><dd>Фиксированная, 1 скорость</dd></div>
+              <div class="spec-row"><dt>Тормоза</dt><dd>Без тормозов / ободные</dd></div>
+            </dl>
+            <div class="podium-actions">
+              <a class="podium-price" aria-label="Открыть страницу модели Apex">Стоимость</a>
+              <span class="podium-price">от 860 000 ₽</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. ПОЧЕМУ ВЫБИРАЮТ НАС ============ -->
+  <section class="trust" id="trust" aria-label="Стандарты ателье">
+    <div class="section-frame">
+      <span class="section-index light" data-reveal>Стандарты</span>
+      <h2 class="section-title light" data-reveal>То, что не видно на фотографии.</h2>
+
+      <div class="trust-grid">
+        <div class="trust-item" data-reveal>
+          <span class="trust-num">01</span>
+          <h3>Сертифицированная сборка</h3>
+          <p>Каждая рама проходит проверку по протоколу ISO 4210 перед тем, как попасть в руки мастера-сборщика.</p>
+        </div>
+        <div class="trust-item" data-reveal>
+          <span class="trust-num">02</span>
+          <h3>Настройка под владельца</h3>
+          <p>Геометрия, вылет выноса и высота посадки рассчитываются по вашим антропометрическим данным, а не подбираются из готовых размеров.</p>
+        </div>
+        <div class="trust-item" data-reveal>
+          <span class="trust-num">03</span>
+          <h3>Примерка перед заказом</h3>
+          <p>Полтора часа на фит-стенде — вы чувствуете геометрию будущего велосипеда до того, как она станет рамой.</p>
+        </div>
+        <div class="trust-item" data-reveal>
+          <span class="trust-num">04</span>
+          <h3>Техническое обслуживание</h3>
+          <p>Три плановых осмотра в первый год — без счёта. Приезжаете, оставляете велосипед, пьёте кофе в лаунже.</p>
+        </div>
+        <div class="trust-item" data-reveal>
+          <span class="trust-num">05</span>
+          <h3>Гарантия на раму</h3>
+          <p>Пожизненное покрытие от трещин и деформации конструкции при штатной эксплуатации.</p>
+        </div>
+        <div class="trust-item" data-reveal>
+          <span class="trust-num">06</span>
+          <h3>Индивидуальная посадка</h3>
+          <p>Финальная регулировка проводится с вами лично — на педалях, а не по чертежу.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. АКСЕССУАРЫ ============ -->
+  <section class="accessories" id="accessories" aria-label="Аксессуары">
+    <div class="section-frame">
+      <div class="accessories-header">
+        <span class="section-index" data-reveal>Экипировка</span>
+        <h2 class="section-title" data-reveal>Продолжение той же инженерии.</h2>
+      </div>
+
+      <div class="accessories-strip">
+        <article class="accessory-card" data-reveal>
+          <div class="accessory-media">
+            <img src="img/9.png" alt="Аэродинамический велошлем" loading="lazy">
+          </div>
+          <h3>Шлемы</h3>
+          <p>Аэродинамика, проверенная в трубе</p>
+        </article>
+        
+        <article class="accessory-card" data-reveal>
+          <div class="accessory-media">
+            <img src="img/10.png" alt="Спортивные солнцезащитные очки" loading="lazy">
+          </div>
+          <h3>Очки</h3>
+          <p>Фотохромная линза, поле обзора 180°</p>
+        </article>
+        <article class="accessory-card" data-reveal>
+          <div class="accessory-media">
+            <img src="img/11.png" alt="Велокомпьютер с GPS" loading="lazy">
+          </div>
+          <h3>Компьютеры</h3>
+          <p>GPS-навигация и метрики мощности</p>
+        </article>
+        <article class="accessory-card" data-reveal>
+          <div class="accessory-media">
+            <img src="img/12.png" alt="Профессиональная велоформа" loading="lazy">
+          </div>
+          <h3>Форма</h3>
+          <p>Компрессионная посадка, шов без трения</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. ИСТОРИИ ВЛАДЕЛЬЦЕВ ============ -->
+  <section class="stories" id="stories" aria-label="Истории владельцев">
+    <div class="section-frame">
+      <span class="section-index" data-reveal>Владельцы</span>
+      <h2 class="section-title" data-reveal>Маршруты, которые они выбрали.</h2>
+
+      <div class="stories-track" id="storiesTrack">
+        <article class="story-card" data-reveal>
+          <div class="story-media">
+            <img src="img/13.png" alt="Велосипедист на горной дороге на рассвете" loading="lazy">
+          </div>
+          <div class="story-info">
+            <p class="story-quote">«Перевал Тентюк на Solano — тот момент, когда понимаешь, зачем считали каждый грамм.»</p>
+            <p class="story-meta">Артём Воронцов · 4 200 км за сезон</p>
+          </div>
+        </article>
+        <article class="story-card" data-reveal>
+          <div class="story-media">
+            <img src="img/14.png" alt="Велосипедистка на гравийной дороге в лесу" loading="lazy">
+          </div>
+          <div class="story-info">
+            <p class="story-quote">«Terra прошла три страны по грунту так, будто это было её единственное предназначение.»</p>
+            <p class="story-meta">Мария Литвинова · маршрут через Балканы</p>
+          </div>
+        </article>
+        <article class="story-card" data-reveal>
+          <div class="story-media">
+            <img src="img/15.png" alt="Трековые гонки на велодроме" loading="lazy">
+          </div>
+          <div class="story-info">
+            <p class="story-quote">«На Apex я впервые почувствовал velodrom так, как его чувствуют профессионалы.»</p>
+            <p class="story-meta">Игорь Панфилов · трек-клуб «Скорость»</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. ВЕЛОСТУДИЯ ============ -->
+  <section class="studio" id="studio" aria-label="Ателье">
+    <div class="studio-media">
+      <img src="img/16.png" alt="Интерьер сервисной мастерской велоателье" loading="lazy">
+    </div>
+    <div class="studio-content">
+      <span class="section-index light" data-reveal>Пространство</span>
+      <h2 class="section-title light" data-reveal>Место, где велосипед становится вашим.</h2>
+      <p class="studio-text" data-reveal>Сервисная зона за стеклом — вы видите, как собирают ваш велосипед, а не верите на слово. Лаунж с кофе для тех, кто ждёт настройки посадки. Свет, спроектированный так же тщательно, как геометрия рамы.</p>
+
+      <ul class="studio-facts" data-reveal>
+        <li>Сервисная зона за стеклом</li>
+        <li>Лаунж и кофе-бар</li>
+        <li>Фит-стенд для примерки</li>
+        <li>Приём по записи, без очереди</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 9. FAQ ============ -->
+  <section class="faq" id="faq" aria-label="Частые вопросы">
+    <div class="section-frame narrow">
+      <span class="section-index" data-reveal>Вопросы</span>
+      <h2 class="section-title" data-reveal>Что обычно спрашивают перед визитом.</h2>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion-item" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Сколько занимает индивидуальная настройка посадки?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Полная примерка и настройка геометрии занимает от девяноста минут. Мастер снимает пятнадцать антропометрических параметров и подбирает раму под них, а не наоборот.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Можно ли изменить характеристики велосипеда после заказа?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Да, до момента финальной сборки можно скорректировать компоненты, цвет и настройки геометрии вместе с мастером.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Что входит в гарантийное обслуживание?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Рама покрывается пожизненной гарантией на трещины и деформацию. Первые три технических осмотра после покупки — без стоимости.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Сколько времени занимает изготовление велосипеда?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>От шести до десяти недель с момента примерки — в зависимости от модели и загрузки мастерской в моменте заказа.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal>
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Есть ли рассрочка или трейд-ин?</span>
+            <span class="accordion-icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Да, доступна рассрочка на срок до двенадцати месяцев, а также программа трейд-ин для владельцев велосипедов других премиальных марок.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. CTA ============ -->
+  <section class="final-cta" id="cta" aria-label="Призыв к действию">
+    <div class="section-frame">
+      <h2 class="cta-title" data-reveal>Ваш следующий маршрут<br>начинается здесь.</h2>
+      <div class="cta-actions" data-reveal>
+        <button class="btn-primary large" id="ctaConsultBtn" type="button">Записаться на консультацию</button>
+        <a href="#contact" class="btn-outline large">Посетить шоурум</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 11. КОНТАКТЫ ============ -->
+  <section class="contact" id="contact" aria-label="Контакты">
+    <div class="section-frame contact-frame">
+      <div class="contact-info">
+        <span class="section-index" data-reveal>Контакты</span>
+        <h2 class="section-title" data-reveal>Приезжайте, чтобы почувствовать раму до того, как она станет вашей.</h2>
+
+        <dl class="contact-list" data-reveal>
+          <div class="contact-row">
+            <dt>Адрес</dt>
+            <dd>Москва, Малая Ордынка, 19</dd>
+          </div>
+          <div class="contact-row">
+            <dt>Телефон</dt>
+            <dd><a href="tel:+74950000000">+7 495 000-00-00</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Почта</dt>
+            <dd><a href="mailto:atelier@velocity.ru">atelier@velocity.ru</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Часы</dt>
+            <dd>Пн–Пт 10:00–20:00 · Сб–Вс 11:00–18:00</dd>
+          </div>
+        </dl>
+
+        <div class="social-row" data-reveal>
+          <a href="#" aria-label="Reach в Telegram">Telegram</a>
+          <a href="#" aria-label="Reach ВКонтакте">ВКонтакте</a>
+          <a href="#" aria-label="Reach в Instagram">Instagram</a>
+        </div>
+      </div>
+
+      <div class="contact-map" data-reveal aria-hidden="true">
+        <div class="map-placeholder">
+          <svg viewBox="0 0 400 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="400" fill="#E8E6E1"/>
+            <path d="M0 120 H400 M0 220 H400 M0 320 H400 M100 0 V400 M220 0 V400 M320 0 V400" stroke="#C9C4BA" stroke-width="1"/>
+            <circle cx="220" cy="220" r="7" fill="#151513"/>
+            <circle cx="220" cy="220" r="16" fill="none" stroke="#151513" stroke-width="1" opacity="0.4"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-frame footer-inner">
+    <span class="brand-word small">Reach</span>
+    <p>© 2026 Reach. Инженерия, в которой каждый грамм имеет значение.</p>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="consultModal" aria-hidden="true">
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Закрыть">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <span class="section-index" id="modalTitle">Консультация</span>
+    <h3>Оставьте контакт — подберём время примерки.</h3>
+    <form class="modal-form" id="modalForm">
+      <label>
+        <span>Имя</span>
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label>
+        <span>Телефон</span>
+        <input type="tel" name="phone" required autocomplete="tel">
+      </label>
+      <button type="submit" class="btn-primary full">Отправить заявку</button>
+    </form>
+    <div class="modal-success" id="modalSuccess">
+      <span class="modal-success-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <p class="modal-success-title">Заявка принята</p>
+      <p class="modal-success-text">Мастер свяжется с вами в течение дня.</p>
+    </div>
+  </div>
+</div>
+
+<script src="BikeStore.js"></script>
+</body>
+</html>
